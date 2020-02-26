@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.praassessment1.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_persegiPanjangFragment2"
+            app:destination="@id/persegiPanjangFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_persegiPanjangFragment22"
+            app:destination="@id/persegiPanjangFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_persegiPanjangFragment23"
+            app:destination="@id/persegiPanjangFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_persegiPanjangFragment24"
+            app:destination="@id/persegiPanjangFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_persegiPanjangFragment25"
+            app:destination="@id/persegiPanjangFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_segitigaFragment3"
+            app:destination="@id/segitigaFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/persegiPanjangFragment2"
+        android:name="com.example.praassessment1.PersegiPanjangFragment"
+        android:label="fragment_persegi_panjang"
+        tools:layout="@layout/fragment_persegi_panjang" >
+        <action
+            android:id="@+id/action_persegiPanjangFragment2_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/segitigaFragment3"
+        android:name="com.example.praassessment1.SegitigaFragment"
+        android:label="fragment_segitiga"
+        tools:layout="@layout/fragment_segitiga" >
+        <action
+            android:id="@+id/action_segitigaFragment3_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.praassessment1.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>
